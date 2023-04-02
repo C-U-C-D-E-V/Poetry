@@ -1,0 +1,81 @@
+.header{
+    height: 55px;
+    display: flex;
+  
+    background-color: lightgrey;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .middle-section,
+  .left-section,
+  .right-section{
+    display:flex;
+    align-items: center;
+  }
+
+  .middle-section
+  {
+  }
+
+    .left-section{
+      margin-left:20px;
+    }
+    
+    .more-button,
+    .help-button{
+      background-color: #ffe01b;
+      border: 1px solid;
+      font-size: 7px;
+      font-weight: bold;
+      border-radius: 20px;
+      padding: 7px 12px;
+      margin-right: 10px;
+      cursor: pointer;
+      box-shadow: 0.5px 4px 0px rgba(0, 0, 0,1);
+      transition: box-shadow 0.25s ;
+      font-size: 10px;
+    }
+    
+    
+    
+    .button_smecher:active{
+      box-shadow: 0 0 0 ;
+      transform: scale(0.95);
+    }
+  
+    
+  
+  .middle-section{
+    flex:1;
+    margin-left:70px ;
+    margin-right:35px ;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-window{
+    border-radius: 50px;
+    flex: 1;
+    border: 1px solid black;
+    outline: none;
+    padding: 5px 10px;
+  }
+  
+  .search-window::placeholder{
+    padding-left: 20px;
+  }
+  
+  .cuc-image{
+    width: 100px;
+  }
+  
+  .name{
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .name:hover{
+    text-decoration:underline;
+  }

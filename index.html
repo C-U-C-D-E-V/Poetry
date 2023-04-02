@@ -1,0 +1,57 @@
+html>
+<head>
+    <meta charset="UTF-8" />
+    <title>C.U.C poetry</title>
+    <link
+      styles="icon-large"
+      rel="icon"
+      href="L.O.G.O.D.E.V.png"
+      type="image/x-icon"
+    />
+  </head>
+<link rel="stylesheet" href="design.css">
+<link rel="stylesheet" href="top.css">
+<body>
+    
+<div class="header">
+    <div class="left-section">
+      <button class="more-button" onclick="speak(document.getElementById('poez').textContent)">Text to speech</button>
+    </div>
+    <div class="middle-section">
+        <li style="float:right;list-style-type: none;">
+            <ul>
+            <li style="display: flex"><input class="search-window" type="text" placeholder="Search" onkeyup="cauta()" id="searchbox" autocomplete="off"></li>
+            <li onclick="optintxtbox(1)" class="searchopt" id="opt1">a</li>
+            <li onclick="optintxtbox(2)" class="searchopt" id="opt2">b</li>
+            <li onclick="optintxtbox(3)" class="searchopt" id="opt3">c</li>
+        </ul></li>
+      <button class="more-button" onclick="searchPoem()">Search</button>
+    </div>
+    <div class="right-section">
+      <p class="name">C.U.C.D.E.V</p>
+      <img class="cuc-image" src="L.O.G.O.D.E.V.png" />
+    </div>
+  </div>
+
+<div class="pagesplit">
+    <div style="width:20%; border: none;" class="pagepart themeimgpart">
+        <img onclick="buttonTheme('spring')" class="imgleft" src="images/flower.png" style="width:80%">
+        <img onclick="buttonTheme('love')" class="imgleft" src="images/heart.png">
+        <img onclick="buttonTheme('history')" class="imgleft" src="images/map.png" style="width:60%">
+        <img onclick="buttonTheme('death')" class="imgleft" src="images/skull.png" style="width:40%">
+    </div>
+    <div style="width:40%" class="pagepart poempart" id="poez"></div>
+    <div style="width:35%; border: none;" class="pagepart">
+        <img id="img" style="width:80%">
+    </div>
+</div>
+
+<script src="chestie.js"></script>
+<script src="script.js"></script>
+<script src="poeme.js"></script>
+
+<!-- <div>
+    <button class="butonsub butonsmec" style="margin-left: 40%; margin-top: 20%;font-size: 40px;">Mi-l sugi!</button>
+</div> -->
+</body>
+</html>
